@@ -4,7 +4,7 @@ import subprocess
 import pypandoc
 
 with open('README.rst', 'w') as dest:
-    long_description = pypandoc.convert('README.md', 'rst')
+    long_description = pypandoc.convert_file('README.md', 'rst')
     dest.write(long_description)
 
 args = ['python3', 'setup.py'] + sys.argv[1:]
