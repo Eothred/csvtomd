@@ -1,6 +1,7 @@
 from setuptools import setup
 
-with open('README.rst') as f:
+
+with open('README.md') as f:
     long_description = f.read()
 
 setup(
@@ -8,6 +9,7 @@ setup(
     version='0.3.0',
     description='Convert your CSV files into Markdown tables.',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/mplewis/csvtomd',
     license='MIT',
     author='Matthew Lewis',
